@@ -1,0 +1,260 @@
+/* Box-sizing */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* set up the body */
+body {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  min-height: 100vh;
+
+  color: #fff;
+}
+
+/* making images easier to work with */
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*    *****************      */
+
+:root {
+  --main-color: #0b0d17;
+  --secend-color: #d2d8f9;
+  --hover-color: #85868b;
+  --font-weight: 500;
+  --main-padding-top: 10rem;
+  --main-padding-bottom: 10rem;
+  --main-font: "Barlow Condensed", sans-serif;
+  --second-font: "Bellefair", serifs;
+}
+
+.home-page {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../assets/home/background-home-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-section {
+  position: relative;
+}
+
+.main-header {
+  padding-top: 5rem;
+}
+
+.center-container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+#home-page-logo {
+  margin-top: -2.5rem;
+}
+
+.container-header {
+  font-family: var(--main-font);
+  display: flex;
+  letter-spacing: 1.8px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-size: 2rem;
+}
+
+.container-header hr {
+  width: 50rem;
+  position: absolute;
+  z-index: 333;
+  top: 32%;
+  left: 10%;
+  border: 0.1px solid rgba(255, 255, 255, 0.493);
+}
+
+.nav-links {
+  padding-top: 1.5rem;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 60rem;
+  height: 6.5rem;
+  gap: 1rem;
+}
+
+.header-nav:link,
+.header-nav:visited {
+  text-decoration: none;
+
+  color: #fff;
+}
+
+.nav-link {
+  margin-left: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  bottom: 0;
+  transition: all 0.3s;
+  background-color: #d2d8f9;
+}
+
+.nav-link:hover:before {
+  width: 100%;
+}
+
+.active::before {
+  width: 100%;
+  background-color: white;
+}
+
+.background-header {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  min-width: 50%;
+
+  z-index: 1;
+  height: 10rem;
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.main-body {
+  max-width: 100vw;
+  min-height: 80vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.body-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.center-container--1 {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.text-area {
+  flex-basis: 50%;
+}
+
+.text-area h4 {
+  font-family: var(--second-font);
+  font-size: 3rem;
+  font-weight: var(--font-weight);
+  letter-spacing: 2px;
+}
+
+.text-area h1 {
+  font-size: 12rem;
+  font-weight: var(--font-weight);
+  font-family: var(--second-font);
+}
+
+.text-area p {
+  font-family: var(--main-font);
+  font-size: 2rem;
+}
+
+.explore-button {
+  cursor: pointer;
+  flex-basis: 50%;
+  align-self: center;
+  text-align: right;
+}
+
+.explore-button h3 {
+  font-size: 4rem;
+  letter-spacing: 1px;
+  color: black;
+  display: inline-block;
+  padding: 10rem 5rem;
+  border-radius: 100%;
+  background-color: white;
+  margin-right: 3rem;
+  margin-top: 5rem;
+  transition: all 1s;
+
+  font-family: var(--second-font);
+  font-weight: var(--font-weight);
+}
+
+.explore-button h3:hover {
+  box-shadow: 0 0 0 60px rgba(252, 252, 252, 0.2);
+}
+
+.hamburger-menu {
+  display: none;
+  border: none;
+  background: none;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+}
+
+.fa-bars {
+}

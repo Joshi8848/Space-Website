@@ -1,0 +1,97 @@
+.commander-page {
+  max-width: 100vw;
+  min-height: 100vh;
+  background-image: url(../assets/crew/background-crew-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.crew-section {
+  position: relative;
+}
+
+.crews {
+  position: relative;
+  display: grid;
+  min-height: 80vh;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 15rem;
+}
+
+.crew-image {
+  position: absolute;
+  width: 40%;
+  bottom: -3%;
+  right: 0;
+  margin-left: 10rem;
+}
+
+.crew-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8rem;
+  margin-top: 8rem;
+  gap: 10rem;
+}
+
+.crew-container h3 {
+  font-family: var(--main-font);
+  font-weight: var(--font-weight);
+  font-size: 3rem;
+  letter-spacing: 2.5px;
+}
+
+.crew-info h2,
+.crew-info h1 {
+  font-family: var(--second-font);
+  font-weight: var(--font-weight);
+}
+
+.crew-info h2 {
+  font-size: 3.5rem;
+  color: rgba(228, 216, 216, 0.589);
+  letter-spacing: 1.5px;
+}
+
+.crew-info h1 {
+  font-size: 5rem;
+  letter-spacing: 1px;
+  margin-bottom: 3rem;
+}
+
+.crew-info p {
+  font-family: var(--main-font);
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.slider-icons {
+  position: absolute;
+  display: flex;
+  gap: 1rem;
+  z-index: 99;
+  bottom: 15%;
+  left: 6.2%;
+}
+
+.slider-icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: gray;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.default {
+  background-color: white;
+}
+
+.slider-active {
+  background-color: white;
+  box-shadow: 0 0 0 3px rgb(22, 87, 128);
+}
+
+.commander-hidden {
+  display: none;
+}

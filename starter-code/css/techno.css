@@ -1,0 +1,104 @@
+.technology-page {
+  max-width: 100vw;
+  min-height: 100vh;
+  background: url(../assets/technology/background-technology-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.technology-body {
+  position: relative;
+}
+
+.techno-body {
+  display: flex;
+  gap: 10rem;
+  padding-top: 15rem;
+  padding-left: 10rem;
+}
+
+.techno-heading span {
+  color: rgba(255, 255, 255, 0.178);
+  margin-right: 1rem;
+
+  font-family: var(--main-font);
+  font-weight: bold;
+}
+
+.techno-heading {
+  font-family: var(--main-font);
+  font-weight: var(--font-weight);
+  letter-spacing: 3px;
+  font-size: 3rem;
+  padding-left: 10rem;
+  padding-top: 5rem;
+}
+
+.buttons-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.nav-button {
+  font-size: 4rem;
+  font-family: var(--second-font);
+  padding-block: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.212);
+  transition: all 0.3s;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  color: black;
+  background-color: white;
+}
+
+.techno-pictures {
+  position: absolute;
+  right: 0;
+  top: 25%;
+}
+
+.techno-text {
+  max-width: 60rem;
+}
+
+.techno-title {
+  font-family: var(--main-font);
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  color: var(--secend-color);
+  margin-bottom: 1rem;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.techno-text h1 {
+  font-family: var(--second-font);
+  font-weight: var(--font-weight);
+  font-size: 5rem;
+  letter-spacing: 1px;
+  margin-bottom: 3rem;
+}
+
+.text-techno {
+  font-family: var(--main-font);
+  font-size: 2.3rem;
+  max-width: 50rem;
+  color: var(--secend-color);
+}
+
+.button-active {
+  background-color: white;
+  color: black;
+}
+
+.techno-hidden {
+  display: none;
+}

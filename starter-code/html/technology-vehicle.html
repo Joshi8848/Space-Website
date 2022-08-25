@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/techno.css" />
+    <link rel="stylesheet" href="../css/media.css" />
+    <script
+      src="https://kit.fontawesome.com/9fa7f0e7bc.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="technology-page">
+    <section class="header-section">
+      <div class="background-header"></div>
+      <header class="main-header">
+        <div class="container-header center-container">
+          <div class="icon-container">
+            <img
+              id="home-page-logo"
+              src="../assets/shared/logo.svg"
+              alt="star shaped logo"
+            />
+          </div>
+
+          <hr />
+
+          <nav class="nav-links">
+            <ul class="links">
+              <li class="nav-link">
+                <a class="header-nav" href="index.html"><b>00</b> HOME</a>
+              </li>
+              <li class="nav-link">
+                <a class="header-nav" href="destination-moon.html"
+                  ><b>01</b> DESTINATION</a
+                >
+              </li>
+              <li class="nav-link">
+                <a class="header-nav" href="crew-commander.html"
+                  ><b>02</b> CREW</a
+                >
+              </li>
+              <li class="nav-link active">
+                <a class="header-nav" href="technology-vehicle.html"
+                  ><b>03</b> TECHNOLOGY</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </section>
+    <section class="technology-body">
+      <div class="techno-container center-container">
+        <h2 class="techno-heading"><span>03</span> SPACE LAUNCH 101</h2>
+        <div class="techno-body" id="launch-vehicle">
+          <div class="buttons-nav">
+            <div class="nav-button button-active" data-attr="#launch-vehicle">
+              1
+            </div>
+            <div class="nav-button" data-attr="#space-port">2</div>
+            <div class="nav-button" data-attr="#space-capsule">3</div>
+          </div>
+          <div class="techno-text">
+            <p class="techno-title">THE TERMINOLOGY...</p>
+            <h1>LAUNCH VEHICLE</h1>
+            <p class="text-techno">
+              A launch vehicle or carrier rocket is a rocket-propelled vehicle
+              used to carry a payload from Earth's surface to space, usually to
+              Earth orbit or beyond. Our WEB-X carrier rocket is the most
+              powerful in operation. Standing 150 metres tall, it's quite an
+              awe-inspiring sight on the launch pad!
+            </p>
+          </div>
+          <div class="techno-pictures">
+            <img
+              class="techno-img"
+              src="../assets/technology/image-launch-vehicle-portrait.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="techno-body techno-hidden" id="space-port">
+          <div class="buttons-nav">
+            <div class="nav-button" data-attr="#launch-vehicle">1</div>
+            <div class="nav-button button-active" data-attr="#space-port">
+              2
+            </div>
+            <div class="nav-button" data-attr="#space-capsule">3</div>
+          </div>
+          <div class="techno-text">
+            <p class="techno-title">THE TERMINOLOGY...</p>
+            <h1>SPACEPORT</h1>
+            <p class="text-techno">
+              A spaceport or cosmodrome is a site for launching (or receiving)
+              spacecraft, by analogy to the seaport for ships or airport for
+              aircraft. Based in the famous Cape Canaveral, our spaceport is
+              ideally situated to take advantage of the Earth’s rotation for
+              launch.
+            </p>
+          </div>
+          <div class="techno-pictures">
+            <img
+              class="techno-img"
+              src="../assets/technology/image-spaceport-portrait.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="techno-body techno-hidden" id="space-capsule">
+          <div class="buttons-nav">
+            <div class="nav-button" data-attr="#launch-vehicle">1</div>
+            <div class="nav-button" data-attr="#space-port">2</div>
+            <div class="nav-button button-active" data-attr="#space-capsule">
+              3
+            </div>
+          </div>
+          <div class="techno-text">
+            <p class="techno-title">THE TERMINOLOGY...</p>
+            <h1>SPACE CAPSULE</h1>
+            <p class="text-techno">
+              A space capsule is an often-crewed spacecraft that uses a
+              blunt-body reentry capsule to reenter the Earth's atmosphere
+              without wings. Our capsule is where you'll spend your time during
+              the flight. It includes a space gym, cinema, and plenty of other
+              activities to keep you entertained.
+            </p>
+          </div>
+          <div class="techno-pictures">
+            <img
+              class="techno-img"
+              src="../assets/technology/image-space-capsule-portrait.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="hamburger-menu">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <script src="../js/main.js"></script>
+    <script src="../js/tech.js"></script>
+  </body>
+</html>
